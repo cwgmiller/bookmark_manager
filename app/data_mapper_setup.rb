@@ -3,7 +3,7 @@ env = ENV['RACK_ENV'] || 'development'
 # checks for current environment from operating system.
 # if RSPEC is running it will set the env to test.
 
-DataMapper.setup(:default, "postgres://localhost/bookmark_manager_#{env}")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://localhost/bookmark_manager_#{env}")
 #Tells datamapper to conncet to my database on my machine.
 #DataMapper knows how to do this under the hood.
 
