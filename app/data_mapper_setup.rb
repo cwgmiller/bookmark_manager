@@ -9,6 +9,7 @@ DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://localhost/bookmark
 
 require './app/models/link'
 require './app/models/tag'
+require './app/models/user'
 #Make the code for all the models available
 #NB that files requires the DataMapper::Resourcetouch
 
