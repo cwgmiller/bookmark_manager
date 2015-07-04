@@ -1,4 +1,6 @@
 require 'data_mapper' #= the gem
+require 'dm-validations'
+
 env = ENV['RACK_ENV'] || 'development'
 # checks for current environment from operating system.
 # if RSPEC is running it will set the env to test.
